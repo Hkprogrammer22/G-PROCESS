@@ -10,11 +10,11 @@
 			
 			<div class="box">
 				<input type="text" name="login" placeholder="Login" data-theme="a">
-				<input type="text" name="senha" placeholder="Senha" data-theme="a">
-				<input type="text" name="senha2" placeholder="Confirmar senha" data-theme="a">
-				<input type="text" name="senha2" placeholder="Nome Completo" data-theme="a">
-				<input type="text" name="senha2" placeholder="Fone" data-theme="a">
-				<input type="text" name="senha2" placeholder="Email" data-theme="a">
+				<input type="password" name="senha" placeholder="Senha" data-theme="a">
+				<input type="password" name="senha2" placeholder="Confirmar senha" data-theme="a">
+				<input type="text" name="name" placeholder="Nome Completo" data-theme="a">
+				<input type="text" name="number_phone" placeholder="Fone" data-theme="a">
+				<input type="text" name="email" placeholder="Email" data-theme="a">
 				<div class="ui-grid-a">
 					<div class="ui-block-a">
 						<a href="#login" data-role="button">Voltar</a>

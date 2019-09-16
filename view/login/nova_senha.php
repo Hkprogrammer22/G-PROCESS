@@ -4,8 +4,8 @@
 		<h1 align="center">Nova Senha</h1>
 		<form method="post" action="#">
 			<div class="box">
-				<input type="text" name="senha" placeholder="Digite sua Nova Senha" data-theme="a">
-				<input type="text" name="senha2" placeholder="Confirme sua Nova Senha" data-theme="a">
+				<input type="password" name="senha" placeholder="Digite sua Nova Senha" data-theme="a">
+				<input type="password" name="senha2" placeholder="Confirme sua Nova Senha" data-theme="a">
 				<a href="#login" class="ui-btn">Voltar</a>
 				<!--<input type="submit" value="Enviar">-->
 				<a href="#login" class="ui-btn">Enviar</a>

@@ -62,7 +62,8 @@
 			<input type="radio" name="metodologia" id="scrum" value="choice-4">
 			<label for="scrum">Scrum</label>
 		</fieldset>
-		<input type="submit" name="" value="Próximo">
+		<!--<input type="submit" value="Próximo">-->
+		<a href="#cascata" class="ui-btn">Cascata</a>
 	</main>
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>
 </div>

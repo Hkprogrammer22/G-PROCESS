@@ -13,18 +13,15 @@
 		</ul>
 	</nav>
 	<main>
-		<div data-role="content">
-			<div class="ui-grid-b">
-				<div class="ui-block-a">
-					<img src="../../img/user.png" width="80">	
-				</div>
-				<h3>Usuário</h3>
-				<div class="ui-block-b">
-					<label>Email: usuario@teste.com</label>
-					<label>Telefone: 9199999-9999</label>		
-				</div>
-			</div>
-		</div>
+		<ul data-role="listview" data-inset="true">
+			<li><a href="#perfil-modificacao">
+			<img src="../../img/user.png">
+			<h2>Usuário</h2>
+			<p>Email: usuario@exemplo.com</p>
+			<p>Telefone: 919999-9999</p>
+			</a>
+			</li>
+		</ul>
 		<nav data-role="navbar">
 			<ul>
 				<li><a href="#perfil" class="ui-btn-active">Projetos Gerênciado</a></li>
@@ -57,18 +54,15 @@
 		</ul>
 	</nav>
 	<main>
-		<div data-role="content">
-			<div class="ui-grid-b">
-				<div class="ui-block-a">
-					<img src="../../img/user.png" width="80">	
-				</div>
-				<h3>Usuário</h3>
-				<div class="ui-block-b">
-					<label>Email: usuario@teste.com</label>
-					<label>Telefone: 9199999-9999</label>		
-				</div>
-			</div>
-		</div>
+		<ul data-role="listview" data-inset="true">
+			<li><a href="#perfil-modificacao">
+			<img src="../../img/user.png">
+			<h2>Usuário</h2>
+			<p>Email: usuario@exemplo.com</p>
+			<p>Telefone: 919999-9999</p>
+			</a>
+			</li>
+		</ul>
 		<nav data-role="navbar">
 			<ul>
 				<li><a href="#perfil">Projetos Gerênciado</a></li>
@@ -101,18 +95,15 @@
 		</ul>
 	</nav>
 	<main>
-		<div data-role="content">
-			<div class="ui-grid-b">
-				<div class="ui-block-a">
-					<img src="../../img/user.png" width="80">	
-				</div>
-				<h3>Usuário</h3>
-				<div class="ui-block-b">
-					<label>Email: usuario@teste.com</label>
-					<label>Telefone: 9199999-9999</label>		
-				</div>
-			</div>
-		</div>
+		<ul data-role="listview" data-inset="true">
+			<li><a href="#perfil-modificacao">
+			<img src="../../img/user.png">
+			<h2>Usuário</h2>
+			<p>Email: usuario@exemplo.com</p>
+			<p>Telefone: 919999-9999</p>
+			</a>
+			</li>
+		</ul>
 		<nav data-role="navbar">
 			<ul>
 				<li><a href="#perfil">Projetos Gerênciado</a></li>
@@ -143,4 +134,24 @@
 		</ul>
 	</main>
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>
+</div>
+<div id="perfil-modificacao"  data-role="page" data-theme="b">
+	<header data-role="header">
+		<a href="#perfil" data-icon="back">Voltar</a>
+		<h1>GDD Mobile</h1>
+	</header>
+	<h1 align="center">Editar Perfil</h1>
+	<form method="post" action="#">
+		<label>Nome Completo:</label>
+		<input type="text" placeholder="Usuário" name="nome" data-theme="a">
+		<label>Login</label>
+		<input type="text" placeholder="Usuário" name="nome" data-theme="a">
+		<label>Senha</label>
+		<input type="text" placeholder="Usuário" name="nome" data-theme="a">
+		<label>Telefone</label>
+		<input type="text" placeholder="Usuário" name="nome" data-theme="a">
+		<label>Email</label>
+		<input type="text" placeholder="Usuário" name="nome" data-theme="a">
+		<input type="submit" value="Salvar">
+	</form>
 </div>
