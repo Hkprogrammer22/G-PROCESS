@@ -1,7 +1,7 @@
 <div data-role="page" id="iniciar_projetos" data-theme="b">
 	<header data-role="header">
 		<a href="#perfil" data-icon="user" class="ui-btn-left">Perfil</a>
-		<h1>GDD Mobile</h1>
+		<h1>G-Process</h1>
 		<a href="#" data-icon="lock" class="ui-btn-right">Sair</a>
 	</header>
 	<nav data-role="navbar">
@@ -51,8 +51,8 @@
 		<hr>
 		<h1>Selecionar Metodologia</h1>
 		<fieldset data-role="controlgroup">
-			<input type="radio" name="metodologia" id="cascata" value="choice-1" checked="checked">
-			<label for="cascata">Cascata</label>
+			<!--<input type="radio" name="metodologia" id="cascata" value="choice-1" checked="checked">
+			<label for="cascata"><a href="#cascata">Cascata</a></label>
 			<input type="radio" name="metodologia" id="espiral" value="choice-2">
 			<label for="espiral">Espiral</label>
 			<input type="radio" name="metodologia" id="prototipacao" value="choice-3">
@@ -60,10 +60,14 @@
 			<input type="radio" name="metodologia" id="incremental" value="choice-4">
 			<label for="incremental">Incremental</label>
 			<input type="radio" name="metodologia" id="scrum" value="choice-4">
-			<label for="scrum">Scrum</label>
+			<label for="scrum">Scrum</label>-->
+			<li><a href="#cascata" data-role="button">Cascata</a></li>
+			<li><a href="#incremental" data-role="button">Incremental</a></li>
+			<li><a href="#espiral" data-role="button">Espiral</a></li>
+			<li><a href="#scrum_definir_nome" data-role="button">Scrum</a></li>
+			<li><a href="#prototipacao" data-role="button">Prototipação</a></li>
 		</fieldset>
-		<!--<input type="submit" value="Próximo">-->
-		<a href="#cascata" class="ui-btn">Cascata</a>
+		<input type="submit" name="" value="Próximo">
 	</main>
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>
 </div>

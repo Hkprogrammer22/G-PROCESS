@@ -1,4 +1,4 @@
-<div id="cascata" data-role="page" data-theme="b">
+<div data-role="page" id="analise_de_risco" data-theme="b">
 	<header data-role="header">
 		<a href="#perfil" data-icon="user" class="ui-btn-left">Perfil</a>
 		<h1>G-PROCESS</h1>
@@ -11,8 +11,12 @@
 			<li><a href="#checar_projetos">Checar Projetos</a></li>
 		</ul>
 	</nav>
+
 	<main>
-		<h1 align="center">Game</h1>
+		
+		<textarea placeholder="Digitar possiveis erros nesta etapa"></textarea>
+		<br>
+		<textarea placeholder="Digitar possiveis resoluções nesta etapa"></textarea>
+		<a href="#espiral" class="ui-btn">Finalizar etapa</a>
 
 	</main>
-</div>
