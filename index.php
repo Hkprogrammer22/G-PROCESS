@@ -1,7 +1,7 @@
 <?php
 
 	include('control/header.html');
-	if (!isset($_SESSION['usuario'])) {
+	if (isset($_SESSION['usuario'])) {
 		include('view/home/home.php');
 		include('view/home/perfil-membro.php');
 		include('view/home/perfil.php');

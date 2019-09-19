@@ -17,7 +17,8 @@
 		<div mbsc-card>
 
 			<h1 style="text-align: center;" class="text-project">Game</h1>
-			<h2 style="text-align: center">Cascata</h2>
+			<hr>
+			<h2>Cascata</h2>
 
 			<div data-role="content" data-theme="b">
 				<h2 class="text-project">Conceito</h2>
@@ -71,7 +72,7 @@
 			  </form>
 			 <button>Finalizar etapa</button>
 			</div>
-
+			<hr>
 			<div data-role="content" data-theme="b">
 				<h2 class="text-project">Pré- Produção</h2>
 				
@@ -124,7 +125,7 @@
 			  </form>
 			 <button disabled="disabled">Finalizar etapa</button>
 			</div>
-
+			<hr>
 			<div data-role="content" data-theme="b">
 				<h2 class="text-project">Protótipo</h2>
 				

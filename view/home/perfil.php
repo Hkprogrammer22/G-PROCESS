@@ -2,7 +2,7 @@
 <div id="perfil" data-role="page" data-theme="b">
 	<header data-role="header">
 		<a href="#perfil" data-icon="user" class="ui-btn-left">Perfil</a>
-		<h1>GDD Mobile</h1>
+		<h1>G-PROCESS</h1>
 		<a href="#" data-icon="lock" class="ui-btn-right">Sair</a>
 	</header>
 	<nav data-role="navbar">
@@ -43,7 +43,7 @@
 <div id="participados" data-role="page" data-theme="b">
 	<header data-role="header">
 		<a href="#perfil" data-icon="user" class="ui-btn-left">Perfil</a>
-		<h1>GDD Mobile</h1>
+		<h1>G-PROCESS</h1>
 		<a href="#" data-icon="lock" class="ui-btn-right">Sair</a>
 	</header>
 	<nav data-role="navbar">
@@ -84,7 +84,7 @@
 <div id="parceiros" data-role="page" data-theme="b">
 	<header data-role="header">
 		<a href="#perfil" data-icon="user" class="ui-btn-left">Perfil</a>
-		<h1>GDD Mobile</h1>
+		<h1>G-PROCESS</h1>
 		<a href="#" data-icon="lock" class="ui-btn-right">Sair</a>
 	</header>
 	<nav data-role="navbar">
@@ -138,7 +138,7 @@
 <div id="perfil-modificacao"  data-role="page" data-theme="b">
 	<header data-role="header">
 		<a href="#perfil" data-icon="back">Voltar</a>
-		<h1>GDD Mobile</h1>
+		<h1>G-PROCESS</h1>
 	</header>
 	<h1 align="center">Editar Perfil</h1>
 	<form method="post" action="#">
