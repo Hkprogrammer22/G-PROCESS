@@ -1,6 +1,7 @@
 <?php
 
 	include('control/header.html');
+
 	if (isset($_SESSION['usuario'])) {
 		include('view/home/home.php');
 		include('view/home/perfil-membro.php');
@@ -24,10 +25,11 @@
         include('view/home/scrum_concluido.php');
 		include('view/home/cascata_dica.php');
 		include('view/home/analise_de_risco.php');
-
 	}else{
+		//Condicional para saber se está em login ou se está em cadastrar;
+		//
 		include('view/login/login.php');
-		include('view/login/cadastrar-se.php');
+		require_once('view/login/cadastrar-se.php');
 		include('view/login/esqueci_senha.php');
 		include('view/login/codigo.php');
 		include('view/login/nova_senha.php');

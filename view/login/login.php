@@ -7,8 +7,8 @@
 			<img src="../../img/logo.png" width="280" class="logo">
 			<h1 align="center">Logar</h1>
 			<div class="box">
-				<input type="text" name="login" placeholder="Login" data-theme="a">
-				<input type="text" name="senha" placeholder="Senha" data-theme="a">
+				<input type="email" name="login" placeholder="Login" data-theme="a" required>
+				<input type="password" name="senha" placeholder="Senha" data-theme="a" required>
 				<a href="#cadastrar-se" class="ui-btn">Cadastrar-se</a>
 				<a href="#esqueci" class="ui-btn">Esqueci minha Senha</a>
 				<ul data-role="listview" data-inset="true">
