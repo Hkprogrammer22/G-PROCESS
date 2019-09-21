@@ -6,7 +6,7 @@
 	<div data-role="content">
 		<img src="../../img/logo.png" width="280" class="logo">
 		<h1 align="center">Cadastrar-se</h1>
-		<form method="GET" action="#">
+		<form method="post" action="../../model/api/user/insert.php">
 			<div class="box">
 				<input type="text" name="name" placeholder="Nome Completo" data-theme="a" required>
 				<input type="email" name="login" placeholder="Login" data-theme="a" required>

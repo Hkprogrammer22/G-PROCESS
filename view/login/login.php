@@ -3,7 +3,7 @@
 		<h1>GDD MOBILE</h1>
 	</div>
 	<div data-role="content">
-		<form method="post" action="#">
+		<form method="get" action="#">
 			<img src="../../img/logo.png" width="280" class="logo">
 			<h1 align="center">Logar</h1>
 			<div class="box">
