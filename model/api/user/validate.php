@@ -23,6 +23,7 @@
 		$dados_usuario = mysqli_fetch_array($resultado_id);
 	
 		if (isset($dados_usuario['name'])) {
+			$_SESSION['id'] = $dados_usuario['id'];
 			$_SESSION['name'] = $dados_usuario['name'];
 			$_SESSION['login'] = $dados_usuario['login'];
 			$_SESSION['password'] = $dados_usuario['password'];

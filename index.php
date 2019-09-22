@@ -1,3 +1,4 @@
+<script type="text/javascript" src="../js/home/sair.js"></script>
 <?php
 	//Iniciar Sessão
 	session_start();

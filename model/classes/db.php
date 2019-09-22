@@ -54,5 +54,11 @@
 				echo "O usuário não foi cadastrado com Sucesso";
 			}
 		}
+		public function query($colunas, $tabela, $condicao){
+			$link = $this->conecta_mysql();
+			$sql = "SELECT $colunas FROM $tabela WHERE $condicao;";
+			$resultado_id = mysqli_query($link, $sql);
+			return $resultado_id;
+		}
 	}
 ?>

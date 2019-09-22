@@ -1,8 +1,8 @@
 <div data-role="page" id="scrum_concluido" data-theme="b">
 	<header data-role="header">
-		<a href="#perfil" data-icon="user" class="ui-btn-left">Perfil</a>
+		<a href="#perfil" data-icon="user" class="ui-btn-left"><?php echo $_SESSION['name']; ?></a>
 		<h1>G-PROCESS</h1>
-		<a href="view/home/sair.php" data-icon="lock" class="ui-btn-right">Sair</a>
+		<button id="sair" data-icon="lock" class="ui-btn-right">Sair</button>
 	</header>
 	<nav data-role="navbar">
 		<ul>
