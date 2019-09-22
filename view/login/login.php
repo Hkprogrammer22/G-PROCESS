@@ -1,9 +1,9 @@
 <div id="login" data-role="page" data-theme="b">
 	<div data-role="header">
-		<h1>GDD MOBILE</h1>
+		<h1>G-PROCESS</h1>
 	</div>
 	<div data-role="content">
-		<form method="get" action="#">
+		<form method="get" name="#">
 			<img src="../../img/logo.png" width="280" class="logo">
 			<h1 align="center">Logar</h1>
 			<div class="box">

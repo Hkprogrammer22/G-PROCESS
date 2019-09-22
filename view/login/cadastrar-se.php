@@ -1,3 +1,4 @@
+<script type="text/javascript" src="js/login/insert_user.js"></script>
 <!-- Cadastrar-se -->
 <div data-role="page" data-theme="b" id="cadastrar-se">
 	<div data-role="header">
@@ -6,7 +7,7 @@
 	<div data-role="content">
 		<img src="../../img/logo.png" width="280" class="logo">
 		<h1 align="center">Cadastrar-se</h1>
-		<form method="post" action="../../model/api/user/insert.php">
+		<form method="post" id="insert_user">
 			<div class="box">
 				<input type="text" name="name" placeholder="Nome Completo" data-theme="a" required>
 				<input type="email" name="login" placeholder="Login" data-theme="a" required>
@@ -19,7 +20,7 @@
 						<a href="#login" data-role="button">Voltar</a>
 					</div>
 					<div class="ui-block-b">
-						<BUTTON>Cadastrar</BUTTON>
+						<button id="btnEnviar">Cadastrar</button>
 					</div>
 				</div>
 			</div>
