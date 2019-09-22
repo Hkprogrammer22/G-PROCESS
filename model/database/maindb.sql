@@ -35,8 +35,10 @@
 /*!40000 ALTER TABLE `sprint` DISABLE KEYS */;
 /*!40000 ALTER TABLE `sprint` ENABLE KEYS */;
 
--- Copiando dados para a tabela maindb.user: ~11 rows (aproximadamente)
+-- Copiando dados para a tabela maindb.user: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` (`id`, `name`, `login`, `password`, `number_phone`, `email`) VALUES
+	(1, 'HENRICK DE SOUSA NOGUEIRA', 'henrick@123', '8ce4b9070698b32a73a3d82413497359', 980877929, 'ricknogueira1231@gmail.com');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
