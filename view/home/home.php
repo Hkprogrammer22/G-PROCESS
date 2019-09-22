@@ -1,6 +1,6 @@
 <div id="home" data-role="page" data-theme="b">
 	<header data-role="header">
-		<a href="#perfil" data-icon="user" class="ui-btn-left">Perfil</a>
+		<a href="#perfil" data-icon="user" class="ui-btn-left"><?php echo $_SESSION['name']; ?></a>
 		<h1>G-PROCESS</h1>
 		<button id="sair" data-icon="lock" class="ui-btn-right">Sair</button>
 	</header>
@@ -13,39 +13,6 @@
 	</nav>
 	<main>
 		<ul data-role="listview" data-split-icon="user" data-filter="true" data-inset="true">
-			<li>
-				<a href="#perfil-membro">
-					<img src="../../img/user.png">
-					<h2>Usuário</h2>
-					<p>Projetos Gerênciados: N°</p>
-					<p>Projetos Participados: N°</p>
-				</a>
-				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">
-				Purchase album
-				</a>
-			</li>
-			<li>
-				<a href="#perfil-membro">
-					<img src="../../img/user.png">
-					<h2>Usuário</h2>
-					<p>Projetos Gerênciados: N°</p>
-					<p>Projetos Participados: N°</p>
-				</a>
-				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">
-				Purchase album
-				</a>
-			</li>
-			<li>
-				<a href="#perfil-membro">
-					<img src="../../img/user.png">
-					<h2>Usuário</h2>
-					<p>Projetos Gerênciados: N°</p>
-					<p>Projetos Participados: N°</p>
-				</a>
-				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">
-				Purchase album
-				</a>
-			</li>
 			<li>
 				<a href="#perfil-membro">
 					<img src="../../img/user.png">
