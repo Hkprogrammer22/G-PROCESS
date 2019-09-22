@@ -11,8 +11,8 @@
 			<div class="box">
 				<input type="text" name="name" placeholder="Nome Completo" data-theme="a" required>
 				<input type="email" name="login" placeholder="Login" data-theme="a" required>
-				<input type="password" name="password" placeholder="Senha" data-theme="a" required>
-				<input type="password" name="password2" placeholder="Confirmar senha" data-theme="a" required>
+				<input type="password" name="password" id="password" placeholder="Senha" data-theme="a" required>
+				<input type="password" name="password2" id="password2" placeholder="Confirmar senha" data-theme="a" required>
 				<input type="text" name="number_phone" placeholder="Fone" data-theme="a" required>
 				<input type="email" name="email" placeholder="Email" data-theme="a" required>
 				<div class="ui-grid-a">
