@@ -5,7 +5,7 @@
 	//Variáveis
 	$name = $_POST['name'];
 	$login = $_POST['login'];
-	$password = $_POST['password'];
+	$password = md5($_POST['password']);
 	$number_phone = $_POST['number_phone'];
 	$email = $_POST['email'];
 	//Objetos

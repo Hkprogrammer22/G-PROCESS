@@ -2,7 +2,7 @@
 	<header data-role="header">
 		<a href="#perfil" data-icon="user" class="ui-btn-left">Perfil</a>
 		<h1>G-PROCESS</h1>
-		<a href="#" data-icon="lock" class="ui-btn-right">Sair</a>
+		<button id="sair" data-icon="lock" class="ui-btn-right">Sair</button>
 	</header>
 	<nav data-role="navbar">
 		<ul>

@@ -1,7 +1,12 @@
 <?php
-	include('control/header.html');
+	//Iniciar Sessão
+	session_start();
 
-	if (isset($_SESSION['usuario'])) {
+	//Incluir a Header
+	include('control/header.html');
+	
+
+	if (isset($_SESSION['login'])) {
 		include('view/home/home.php');
 		include('view/home/perfil-membro.php');
 		include('view/home/perfil.php');
