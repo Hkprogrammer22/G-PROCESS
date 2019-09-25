@@ -6,7 +6,6 @@
 	//Incluir a Header
 	include('control/header.html');
 	
-
 	if (isset($_SESSION['login'])) {
 		include('view/home/home.php');
 		include('view/home/perfil-membro.php');

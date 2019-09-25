@@ -13,11 +13,11 @@
 	$numero_existe = true;
 	$email_existe = true;
 
+	
 	//Objetos
 	$user = new user($name, $login, $password, $number_phone, $email);
 	$db = new db();
 	$link = $db->conecta_mysql();
-
 	//Verificar se o Nome já existe
 	$sql = "SELECT * from user Where name = '$name'";
 	if ($resultado_id = mysqli_query($link, $sql)) {
