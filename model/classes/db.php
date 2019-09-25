@@ -45,7 +45,7 @@
 					$condicoes .= $atributos[$i]."='".$values[$i]."'";
 				}
 			}
-				
+
 			$sql = "INSERT INTO $tabela ($campos) VALUES ($valores)";
 			
 			if (mysqli_query($link, $sql)) {
