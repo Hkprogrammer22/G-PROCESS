@@ -12,11 +12,11 @@
 		</ul>
 	</nav>
 	<main>
+
 		<div id="find_people">
 
 			
 		</div>
-		
 		<div data-role='popup' id='purchase' data-theme='a' data-overlay-theme='b' class='ui-content' style='max-width:340px; padding-bottom:2em;'>
 		    <h3>Deseja Solicitar parceiria?</h3>
 			<button data-theme='b'>Solicitar Parceiria</button>
