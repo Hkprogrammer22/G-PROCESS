@@ -13,12 +13,21 @@
 	</nav>
 	<main>
 		<div id="find_people">
-
-			
+			<ul data-role="listview" data-split-icon="user" data-filter="true" data-split-theme="b" data-inset="true">
+				<li>
+					<a href="#">
+					<img src="img/user.png">
+					<h2>Usuário</h2>
+					<p>Email</p>
+					<p>Email</p></a>
+					<a href="#solicitacao" data-rel="popup" data-position-to="window"></a>
+				</li>
+			</ul>
 		</div>
-		<div data-role='popup' id='purchase' data-theme='a' data-overlay-theme='b' class='ui-content' style='max-width:340px; padding-bottom:2em;'>
-		    <h3>Deseja Solicitar parceiria?</h3>
-			<button data-theme='b'>Solicitar Parceiria</button>
+		<div data-role="popup" id="solicitacao" data-theme="a" data-overlay-theme="b" class="s"style="max-width:340px; padding-bottom:2em;">
+		<h3>Deseja Adcionar este membro aos parceiros?</h3>
+		<a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Solicitar</a>
+		<a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Cancel</a>
 		</div>
 	</main>
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>

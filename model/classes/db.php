@@ -56,7 +56,7 @@
 		}
 		public function query($colunas, $tabela, $condicao){
 			$link = $this->conecta_mysql();
-			$sql = "SELECT $colunas FROM $tabela WHERE $condicao;";
+			$sql = "SELECT $colunas FROM $tabela $condicao;";
 			$resultado_id = mysqli_query($link, $sql);
 			return $resultado_id;
 		}
