@@ -12,17 +12,9 @@
 		</ul>
 	</nav>
 	<main>
+		<h1 style="text-align: center">Lista de Membros</h1>
 		<div id="find_people">
-			<ul data-role="listview" data-split-icon="user" data-filter="true" data-split-theme="b" data-inset="true">
-				<li>
-					<a href="#">
-					<img src="img/user.png">
-					<h2>Usuário</h2>
-					<p>Email</p>
-					<p>Email</p></a>
-					<a href="#solicitacao" data-rel="popup" data-position-to="window"></a>
-				</li>
-			</ul>
+			
 		</div>
 		<div data-role="popup" id="solicitacao" data-theme="a" data-overlay-theme="b" class="s"style="max-width:340px; padding-bottom:2em;">
 		<h3>Deseja Adcionar este membro aos parceiros?</h3>
