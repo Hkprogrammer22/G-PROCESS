@@ -2,7 +2,7 @@
 	<header data-role="header">
 		<a href="#perfil" data-icon="user" class="ui-btn-left"><?php echo $_SESSION['name']; ?></a>
 		<h1>G-PROCESS</h1>
-		<button id="sair" data-icon="lock" class="ui-btn-right">Sair</button>
+		<button onclick="sair()" id="sair" name="sair" data-icon="lock" class="ui-btn-right">Sair</button>
 	</header>
 	<nav data-role="navbar">
 		<ul>
@@ -51,7 +51,7 @@
 		<hr>
 		<h1>Selecionar Metodologia</h1>
 		<fieldset data-role="controlgroup">
-			<!--<input type="radio" name="metodologia" id="cascata" value="choice-1" checked="checked">
+			<input type="radio" name="metodologia" id="cascata" value="choice-1" checked="checked">
 			<label for="cascata"><a href="#cascata">Cascata</a></label>
 			<input type="radio" name="metodologia" id="espiral" value="choice-2">
 			<label for="espiral">Espiral</label>
@@ -60,12 +60,7 @@
 			<input type="radio" name="metodologia" id="incremental" value="choice-4">
 			<label for="incremental">Incremental</label>
 			<input type="radio" name="metodologia" id="scrum" value="choice-4">
-			<label for="scrum">Scrum</label>-->
-			<li><a href="#cascata" data-role="button">Cascata</a></li>
-			<li><a href="#incremental" data-role="button">Incremental</a></li>
-			<li><a href="#espiral" data-role="button">Espiral</a></li>
-			<li><a href="#scrum_definir_nome" data-role="button">Scrum</a></li>
-			<li><a href="#prototipacao" data-role="button">Prototipação</a></li>
+			<label for="scrum">Scrum</label>
 		</fieldset>
 		<input type="submit" name="" value="Próximo">
 	</main>
