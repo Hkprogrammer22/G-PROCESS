@@ -1,3 +1,17 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+		function getDados() {
+			$.ajax({
+				url: 'model/api/home/member_profile.php',
+				success: function (data) {
+					$('#dados_member2').html(data);
+					$('#dados_member').html(data);
+				}
+			});
+		}
+		getDados();
+	});
+</script>
 <div id="perfil-membro" data-role="page" data-theme="b">
 	<header data-role="header">
 		<a href="#perfil" data-icon="user" class="ui-btn-left"><?php echo $_SESSION['name']; ?></a>
@@ -12,17 +26,15 @@
 		</ul>
 	</nav>
 	<main>
-		<div data-role="content">
-			<div class="ui-grid-b">
-				<div class="ui-block-a">
-					<img src="../../img/user.png" width="80">	
-				</div>
-				<h3>Usuário</h3>
-				<div class="ui-block-b">
-					<label>Email: usuario@teste.com</label>
-					<label>Telefone: 9199999-9999</label>		
-				</div>
-			</div>
+		<div id="dados_member">
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<img src="../../img/user.png">
+					<h2>Usuário</h2>
+					<p>Email:</p>
+					<p>Telefone: </p>
+				</li>
+			</ul>
 		</div>
 		<button>Solicitar Parceiria</button>
 		<nav data-role="navbar">
@@ -56,17 +68,8 @@
 		</ul>
 	</nav>
 	<main>
-		<div data-role="content">
-			<div class="ui-grid-b">
-				<div class="ui-block-a">
-					<img src="../../img/user.png" width="80">	
-				</div>
-				<h3>Usuário</h3>
-				<div class="ui-block-b">
-					<label>Email: usuario@teste.com</label>
-					<label>Telefone: 9199999-9999</label>		
-				</div>
-			</div>
+		<div id="dados_member2">
+			
 		</div>
 		<button>Solicitar Parceiria</button>
 		<nav data-role="navbar">

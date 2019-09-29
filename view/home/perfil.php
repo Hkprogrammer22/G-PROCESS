@@ -142,8 +142,10 @@
 	</header>
 	<h1 align="center">Editar Perfil</h1>
 	<form method="post" action="#">
-		<label>Nome Completo:</label>
-		<input type="text" placeholder="Usuário" name="nome" data-theme="a" value=<?php echo $_SESSION['name'] ?>>
+		<label>
+	        <input type="checkbox" id="nome_check">Nome Completo:
+	    </label>
+		<input type="text" value="<?php echo $_SESSION['name'] ?>" placeholder="Usuário" name="nome" data-theme="a" readonly>
 		<label>Login</label>
 		<input type="email" placeholder="Usuário" name="nome" data-theme="a" value=<?php echo $_SESSION['login'] ?>>
 		<label>Senha</label>
