@@ -15,7 +15,7 @@
 	<main>
 		<ul data-role="listview" data-inset="true">
 			<li><a href="#perfil-modificacao">
-			<img src="../../img/user.png">
+			<img src="img/user.png">
 			<h2><?php echo $_SESSION['name'] ?></h2>
 			<p>Email: <?php echo $_SESSION['email'] ?></p>
 			<p>Telefone: <?php echo $_SESSION['number_phone'] ?></p>
@@ -56,7 +56,7 @@
 	<main>
 		<ul data-role="listview" data-inset="true">
 			<li><a href="#perfil-modificacao">
-			<img src="../../img/user.png">
+			<img src="img/user.png">
 			<h2><?php echo $_SESSION['name'] ?></h2>
 			<p>Email: <?php echo $_SESSION['email'] ?></p>
 			<p>Telefone: <?php echo $_SESSION['number_phone'] ?></p>
@@ -97,7 +97,7 @@
 	<main>
 		<ul data-role="listview" data-inset="true">
 			<li><a href="#perfil-modificacao">
-			<img src="../../img/user.png">
+			<img src="img/user.png">
 			<h2><?php echo $_SESSION['name'] ?></h2>
 			<p>Email: <?php echo $_SESSION['email'] ?></p>
 			<p>Telefone: <?php echo $_SESSION['number_phone'] ?></p>
@@ -111,27 +111,8 @@
 				<li><a href="#parceiros" class="ui-btn-active">Parceiros</a></li>
 			</ul>
 		</nav>
-		<ul data-role="listview" data-inset="true">
-			<li><a href="#parceiro">
-			<img src="../../img/user.png">
-			<h2>Parceiro</h2>
-			<p>Projetos Gerenciados: N°</p>
-			<p>Projetos Participados: N°</p>
-			</a>
-			</li>
-			<li><a href="#parceiro">
-			<img src="../../img/user.png">
-			<h2>Parceiro</h2>
-			<p>Projetos Gerenciados: N°</p>
-			<p>Projetos Participados: N°</p></a>
-			</li>
-			<li><a href="#parceiro">
-			<img src="../../img/user.png">
-			<h2>Parceiro</h2>
-			<p>Projetos Gerenciados: N°</p>
-			<p>Projetos Participados: N°</p></a>
-			</li>
-		</ul>
+		<div class='parceiros'>
+		</div>
 	</main>
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>
 </div>
@@ -157,3 +138,14 @@
 		<input type="submit" value="Salvar">
 	</form>
 </div>
+<script>
+	$(document).ready(function(){
+		$.ajax({
+			url: 'model/api/perfil/partner.php',
+			success: function(data){
+				$('.parceiros').html(data);
+				//alert(data);
+			}
+		});
+	});
+</script>

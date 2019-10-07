@@ -2,9 +2,9 @@
 	class db
 	{
 		//Variáveis
-		public $host = 'localhost';
+		public $host = '127.0.0.1';
 		public $user = 'root';
-		public $senha = 'p@$$w0rd';
+		public $senha = 'root';
 		public $db = 'maindb';
 
 		//Conexão
@@ -49,7 +49,7 @@
 			$sql = "INSERT INTO $tabela ($campos) VALUES ($valores)";
 			
 			if (mysqli_query($link, $sql)) {
-				echo "O usuário foi cadastrado com Sucesso";
+				echo "O usuário adcionado com Sucesso";
 			}else{
 				echo "O usuário não foi cadastrado com Sucesso";
 			}
