@@ -8,6 +8,7 @@ $(document).ready(function(){
             data: {parceiro: id_usuario},
             success: function(data){
                 alert(data);
+                document.location.reload(true);
             }
         });
         

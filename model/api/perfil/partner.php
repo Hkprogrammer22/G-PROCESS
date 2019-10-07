@@ -15,7 +15,7 @@
 
 	//Resultado da Busca
 	if ($resultado_id) {
-		echo "<ul data-role='listview' data-inset='true' class='ui-listview ui-listview-inset ui-corner-all ui-shadow'>";
+		echo "<ul data-role='listview' data-inset='true' data-filter='true' class='ui-listview ui-listview-inset ui-corner-all ui-shadow'>";
 		while ($registro = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)) {
 			echo "<li class='ui-li-has-thumb ui-first-child'><a href='#parceiro' class='ui-btn ui-btn-icon-right ui-icon-carat-r'>";
 					echo "<img src='img/user.png'>";

@@ -21,10 +21,3 @@
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>
 </div>
 <script type="text/javascript" src="js/home/atualiza_pessoas.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#a_parceiro').click(function(){
-			alert('teste');
-		});
-	});
-</script>
