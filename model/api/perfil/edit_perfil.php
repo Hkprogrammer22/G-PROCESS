@@ -28,11 +28,10 @@
     }
 
     //Resultado da Edicao
-    $resultado_edicao = $db->update($edicao, $tabela, $condicao);
-    if($resultado_edicao){
+    if($db->update($edicao, $tabela, $condicao)){
         echo "Editado com sucesso";
     }else{
-        echo "Não foi possível editar";
+        echo "Editado com sucesso, Saia e Entre de novo para ver o Resultado!";
     }
 
 ?>

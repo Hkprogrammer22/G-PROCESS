@@ -64,10 +64,8 @@
 		//Método de Edicao
 		public function update($edicao, $tabela, $condicao){
 			$link = $this->conecta_mysql();
-			$sql = "UPDATE $tabela set $edicao $condicao;";
+			$sql = "UPDATE $tabela set $edicao $condicao";
 			mysqli_query($link, $sql);
-			echo "$sql";
-			
 		}
 	}
 ?>
