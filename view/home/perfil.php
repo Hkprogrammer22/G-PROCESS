@@ -122,30 +122,29 @@
 		<h1>G-PROCESS</h1>
 	</header>
 	<h1 align="center">Editar Perfil</h1>
-	<form method="post" action="#">
-		<label>
-	        <input type="checkbox" id="nome_check">Nome Completo:
-	    </label>
-		<input type="text" value="<?php echo $_SESSION['name'] ?>" placeholder="Usuário" name="nome" data-theme="a" readonly>
+	<form method="post" id='edit_perfil'>
+		<input type="text" value="<?php echo $_SESSION['name'] ?>" placeholder="Digite seu nome" name="name" data-theme="a" readonly>
 		<label>Login</label>
-		<input type="email" placeholder="Usuário" name="nome" data-theme="a" value=<?php echo $_SESSION['login'] ?>>
+		<input type="email" placeholder="Digite seu Login" name="login" data-theme="a" value=<?php echo $_SESSION['login'] ?>>
 		<label>Senha</label>
-		<input type="password" name="nome" data-theme="a" placeholder="Digite sua senha nova senha">
+		<input type="password" name="password" data-theme="a" placeholder="Digite sua senha nova senha">
 		<label>Telefone</label>
-		<input type="text" placeholder="Usuário" name="nome" data-theme="a" value=<?php echo $_SESSION['number_phone'] ?>>
+		<input type="text" placeholder="Digite seu número de telefone" name="number_phone" data-theme="a" value=<?php echo $_SESSION['number_phone'] ?>>
 		<label>Email</label>
-		<input type="text" placeholder="Usuário" name="nome" data-theme="a" value=<?php echo $_SESSION['email'] ?>>
+		<input type="text" placeholder="Digite seu Email" name="email" data-theme="a" value=<?php echo $_SESSION['email'] ?>>
 		<input type="submit" value="Salvar">
 	</form>
 </div>
 <script>
-	$(document).ready(function(){
+	$('#edit_perfil').submit(function(){
 		$.ajax({
-			url: 'model/api/perfil/partner.php',
+			url: 'model/api/perfil/edit_perfil.php',
+			type: 'post',
+			data: $('#edit_perfil').serialize(),
 			success: function(data){
-				$('.parceiros').html(data);
-				//alert(data);
+				alert(data);
 			}
-		});
+		})
 	});
 </script>
+<script src="js/perfil/find_partner.js"></script>

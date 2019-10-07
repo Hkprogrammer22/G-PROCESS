@@ -10,9 +10,7 @@
 	$db = new db();
 	$colunas = 'id, name, email, number_phone';
 	$tabela = ' user ';
-	$condicao = "where id != 1 and id not in(
-		select id_partner from user u 
-		join partner p on p.id_partner = u.id)";
+	$condicao = "where id != $id and id not in(select id_partner from user u join partner p on p.id_user = $id)";
 	$resultado_id = $db->query($colunas, $tabela, $condicao);
 
 	//Resultado da Busca
