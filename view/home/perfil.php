@@ -123,7 +123,7 @@
 	</header>
 	<h1 align="center">Editar Perfil</h1>
 	<form method="post" id='edit_perfil'>
-		<input type="text" value="<?php echo $_SESSION['name'] ?>" placeholder="Digite seu nome" name="name" data-theme="a" readonly>
+		<input type="text" value="<?php echo $_SESSION['name'] ?>" placeholder="Digite seu nome" name="name" data-theme="a">
 		<label>Login</label>
 		<input type="email" placeholder="Digite seu Login" name="login" data-theme="a" value=<?php echo $_SESSION['login'] ?>>
 		<label>Senha</label>
@@ -135,16 +135,5 @@
 		<input type="submit" value="Salvar">
 	</form>
 </div>
-<script>
-	$('#edit_perfil').submit(function(){
-		$.ajax({
-			url: 'model/api/perfil/edit_perfil.php',
-			type: 'post',
-			data: $('#edit_perfil').serialize(),
-			success: function(data){
-				alert(data);
-			}
-		})
-	});
-</script>
+<script src="js/perfil/edit_perfil.js"></script>
 <script src="js/perfil/find_partner.js"></script>

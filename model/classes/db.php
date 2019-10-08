@@ -61,11 +61,23 @@
 			$resultado_id = mysqli_query($link, $sql);
 			return $resultado_id;
 		}
-		//Método de Edicao
+		
+		//Método de Update
 		public function update($edicao, $tabela, $condicao){
 			$link = $this->conecta_mysql();
 			$sql = "UPDATE $tabela set $edicao $condicao";
-			mysqli_query($link, $sql);
+			
+		}
+
+		//Método Delete
+		public function delete($tabela, $condicao){
+			$link = $this->conecta_mysql();
+			$sql = "DELETE FROM $tabela $condicao";
+			if(mysqli_query($link, $sql)){
+				echo "Deletado com Sucesso";
+			}else{
+				echo "Ocorreu um erro ao Deletar";
+			}
 		}
 	}
 ?>

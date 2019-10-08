@@ -8,20 +8,22 @@
 	
 	//Ojeto de Busca
 	$db = new db();
-	$colunas = 'name, login, number_phone, email';
+	$colunas = 'id_partner, name, login, number_phone, email';
 	$tabela = ' user ';
-	$condicao = "u join partner p on p.id_partner = u.id WHERE id_user = '$id'";
+	$condicao = "u join partner p on p.id_partner = u.id WHERE id_user = '$id' ORDER BY name";
 	$resultado_id = $db->query($colunas, $tabela, $condicao);
 
 	//Resultado da Busca
 	if ($resultado_id) {
-		echo "<ul data-role='listview' data-inset='true' data-filter='true' class='ui-listview ui-listview-inset ui-corner-all ui-shadow'>";
+		echo "<ul data-role='listview' data-split-icon='delete' data-filter='true' data-split-theme='b' data-inset='true' class='ui-listview ui-listview-inset ui-corner-all ui-shadow'>";
 		while ($registro = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)) {
-			echo "<li class='ui-li-has-thumb ui-first-child'><a href='#parceiro' class='ui-btn ui-btn-icon-right ui-icon-carat-r'>";
+			echo "<li class='ui-li-has-alt ui-li-has-thumb ui-first-child ui-last-child'>";
+				echo "<a href='#' class='ui-btn' id='lista_membros'>";
 					echo "<img src='img/user.png'>";
 					echo "<h2>".$registro['name']."</h2>";
 					echo "<p>".$registro['email']."</p>";
 					echo "<p>".$registro['number_phone']."</p>";
+					echo "<a href='#solicitacao' data-id_usuario=".$registro['id_partner']." data-position-to='window' aria-haspopup='true' aria-owns='solicitacao' aria-expanded='false' class='ui-btn ui-btn-icon-notext ui-icon-delete ui-btn-b btn_parceiro_delete'></a>";
 				echo "</a>";
 			echo "</li>";
 		}
@@ -29,3 +31,5 @@
 	}
 
 ?>
+<script src="js/perfil/delete_partner.js">
+</script>
