@@ -18,7 +18,7 @@
 		echo "<ul data-role='listview' data-split-icon='delete' data-filter='true' data-split-theme='b' data-inset='true' class='ui-listview ui-listview-inset ui-corner-all ui-shadow'>";
 		while ($registro = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)) {
 			echo "<li class='ui-li-has-alt ui-li-has-thumb ui-first-child ui-last-child'>";
-				echo "<a href='#' class='ui-btn' id='lista_membros'>";
+				echo "<a data-id_usuario=".$registro['id_partner']." href='#parceiro' class='ui-btn link_parceiro'>";
 					echo "<img src='img/user.png'>";
 					echo "<h2>".$registro['name']."</h2>";
 					echo "<p>".$registro['email']."</p>";
@@ -31,5 +31,5 @@
 	}
 
 ?>
-<script src="js/perfil/delete_partner.js">
-</script>
+<script src="js/perfil/delete_partner.js"></script>
+<script src="js/partner/perfil_partner.js"></script>
