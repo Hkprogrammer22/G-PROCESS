@@ -4,12 +4,13 @@
 	
 	//Variáveis de Sessão
 	session_start();
-	$id = 2;
+	$id = $_POST['membro'];
+	
 	//Ojeto de Busca
 	$db = new db();
-	$colunas = 'id, name, email, number_phone';
+	$colunas = 'id, name, login, number_phone, email';
 	$tabela = ' user ';
-	$condicao = "WHERE id = '$id'";
+	$condicao = "WHERE id = $id";
 	$resultado_id = $db->query($colunas, $tabela, $condicao);
 
 	if ($resultado_id) {

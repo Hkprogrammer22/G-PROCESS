@@ -4,7 +4,7 @@
 		//Variáveis
 		public $host = '127.0.0.1';
 		public $user = 'root';
-		public $senha = 'root';
+		public $senha = '';
 		public $db = 'maindb';
 
 		//Conexão
