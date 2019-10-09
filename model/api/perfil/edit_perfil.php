@@ -14,7 +14,7 @@
     $password =  $_POST['password'];
     $number_phone = $_POST['number_phone'];
     $email = $_POST['email'];
-    
+    $id = 2;    
     //Parametros
     $edicao = "";
     $tabela = " user ";
