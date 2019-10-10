@@ -15,20 +15,21 @@
 
 	//Resultado da Busca
 	if ($resultado_id) {
-		echo "<ul data-role='listview' data-split-icon='delete' data-filter='true' data-split-theme='b' data-inset='true' class='ui-listview ui-listview-inset ui-corner-all ui-shadow'>";
+		echo '<fieldset data-role="controlgroup" data-iconpos="right" class="ui-controlgroup ui-controlgroup-vertical ui-corne>
+		<div role="heading" class="ui-controlgroup-label"> 
+			<h1> Selecione seus parceiros para o projeto<h1>
+			</div> <div class="ui-controlgroup-controls">';
 		while ($registro = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)) {
-			echo "<li class='ui-li-has-alt ui-li-has-thumb ui-first-child ui-last-child'>";
-				echo "<a data-id_usuario=".$registro['id_partner']." href='#parceiro' class='ui-btn link_parceiro'>";
-					echo "<img src='img/user.png'>";
-					echo "<h2>".$registro['name']."</h2>";
-					echo "<p>".$registro['email']."</p>";
-					echo "<p>".$registro['number_phone']."</p>";
-					echo "<a href='#solicitacao' data-id_partner=".$registro['id_partner']." data-position-to='window' aria-haspopup='true' aria-owns='solicitacao' aria-expanded='false' class='ui-btn ui-btn-icon-notext ui-icon-plus ui-btn-b '></a>";
-				echo "</a>";
-			echo "</li>";
+			echo '<div class="ui-checkbox">
+					<label for="checkbox-h-6a" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-right ui-first-child"> '.$registro['name'].' 
+					</label>
+					<input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a" data-cacheval="false">
+					</div> ';	 
+			}
+			echo '</div>
+			</fieldset>';	
+			echo '<a class="ui-btn"> Próximo </a> ';	
 		}
-		echo "</ul>";
-	}
 
 ?>
 <script src="js/partner/perfil_partner.js"></script>
