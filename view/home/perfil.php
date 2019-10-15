@@ -29,13 +29,9 @@
 				<li><a href="#parceiros">Parceiros</a></li>
 			</ul>
 		</nav>
-		<ul data-role="listview">
-		    <li><a href="#">Game 1</a></li>
-		    <li><a href="#">Game 2</a></li>
-		    <li><a href="#">Game 3</a></li>
-		    <li><a href="#">Game 4</a></li>
-		    <li><a href="#">Game 5</a></li>
-		</ul>
+
+		<div id="find_project"></div>
+
 	</main>
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>
 </div>
@@ -70,13 +66,9 @@
 				<li><a href="#parceiros">Parceiros</a></li>
 			</ul>
 		</nav>
-		<ul data-role="listview">
-		    <li><a href="#">Game 1</a></li>
-		    <li><a href="#">Game 2</a></li>
-		    <li><a href="#">Game 3</a></li>
-		    <li><a href="#">Game 4</a></li>
-		    <li><a href="#">Game 5</a></li>
-		</ul>
+
+		<div id="find_project_partner"></div>
+
 	</main>
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>
 </div>
@@ -137,3 +129,7 @@
 </div>
 <script src="js/perfil/edit_perfil.js"></script>
 <script src="js/perfil/find_partner.js"></script>
+<script src="js/project/find_project_partner.js"></script>
+<script src="js/project/define_method.js"></script>
+	
+ 

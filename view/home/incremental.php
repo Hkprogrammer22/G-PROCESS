@@ -1,3 +1,5 @@
+<script src="js/project/define_method.js"></script>
+
 <div data-role="page" id="incremental" data-theme="b">
 	<header data-role="header">
 		<a href="#perfil" data-icon="user" class="ui-btn-left"><?php echo $_SESSION['name']; ?></a>
