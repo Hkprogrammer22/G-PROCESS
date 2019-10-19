@@ -33,3 +33,5 @@
 ?>
 <script type="text/javascript" src="js/home/add_partner.js"></script>
 <script src="js/member/perfil_member.js"></script>
+<script src="js/member/member_project.js"></script>
+<script src="js/member/member_project_participated.js"></script>

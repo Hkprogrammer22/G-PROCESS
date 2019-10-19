@@ -1,11 +1,28 @@
+$(document).ready(function(){
 $('.link_method').click(function(){
-		var method = $(this).data('id_method');
-		//var incremental = document.getElementById('incremental');
-		//var cascata = document.getElementById('cascata');
-		alert(method);
-		//if (method = incremental) {
-		//	window.location.href = '#incremental';
-		//} else if(method = cascata) {
-		//	window.location.href = '#cascata';
-		//}
+		var method = $(this).data('id_method');		
+
+		switch(method) {
+			case('incremental'):
+			window.location.href = '#incremental';
+			break;
+
+			case('cascata'):
+			window.location.href = '#cascata';
+			break;
+
+			case('scrum'):
+			window.location.href = '#scrum_definir_nome';
+			break;
+
+			case('prototipacao'):
+			window.location.href = '#prototipacao';
+			break;
+
+			case('espiral'):
+			window.location.href = '#espiral';
+			break;
+		}
+
 	});
+});

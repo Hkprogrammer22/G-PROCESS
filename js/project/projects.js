@@ -1,9 +1,9 @@
 $(document).ready(function(){
 function atualizaProjetos() {
 		$.ajax({
-			url: 'model/api/project/query_partner.php',
+			url: 'model/api/project/projects.php',
 			success: function (data) {
-				$('.find_project_partner').html(data);
+				$('.find_project_all').html(data);
 			}
 		});
 	}

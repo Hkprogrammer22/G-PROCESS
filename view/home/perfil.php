@@ -30,7 +30,7 @@
 			</ul>
 		</nav>
 
-		<div id="find_project"></div>
+		<div class="find_project"></div>
 
 	</main>
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>
@@ -67,7 +67,7 @@
 			</ul>
 		</nav>
 
-		<div id="find_project_partner"></div>
+		<div class="find_project_partner"></div>
 
 	</main>
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>

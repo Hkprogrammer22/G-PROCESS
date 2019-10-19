@@ -13,10 +13,11 @@
 	</nav>
 	<main>
 		<h1 align="center">Lista de Projetos</h1>
-		<div id="find_project">
+		<div class="find_project">
 			
 		</div>
 	</main>
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>
 </div>
 <script type="text/javascript" src="js/project/find_project.js"></script>
+<script src="js/project/projects.js"></script>

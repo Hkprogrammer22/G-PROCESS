@@ -1,16 +1,18 @@
 <?php
-class mission{
-public $idproject;
+class mission{	
+public $id;	
 public $name;
 public $partners;
+
 
 	/** 
     construtor
     **/
-	function __construct($idproject, $name, $partners){
-		$this->idproject = $idproject;
+	function __construct($id, $name, $partners){
+		$this->id = $id;
 		$this->name = $name;
 		$this->partners = $partners;
+		
 	}
   
 }

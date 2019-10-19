@@ -1,3 +1,4 @@
+
 <?php
 	//Requerimento das Classes
 	require_once('../../classes/db.php');
@@ -8,9 +9,9 @@
 	
 	//Ojeto de Busca
 	$db = new db();
-	$colunas = 'id_partner, name, login, number_phone, email';
-	$tabela = ' user ';
-	$condicao = "u join partner p on p.id_partner = u.id WHERE id_user = '$id' ORDER BY name";
+	$colunas = 'id, idphase, name, partners';
+	$tabela = ' mission ';
+	$condicao = "where idphase = '$id'";
 	$resultado_id = $db->query($colunas, $tabela, $condicao);
 
 	//Resultado da Busca
@@ -18,7 +19,7 @@
 		echo '
 		
 			<div role="heading" class="ui-controlgroup-label">
-				<H1>Selecionar Parceiro(s):</lh1>
+				
 			</div>
 			<div data-filter="true"></div>';
 		while ($registro = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)) {
@@ -27,7 +28,7 @@
 				<div class="ui-checkbox">
 					<label for="partner" class="ui-btn ui-corner-all ui-btn-inherit  ui-first-child">
 						'.$registro['name'].'
-						<input type="checkbox" name="partner" data-cacheval="false" value='.$registro['id_partner'].'>
+						<input type="checkbox" name="partner" data-cacheval="false" value='.$registro['name'].'>
 					</label>
 				</div>
 			</div>';
@@ -35,5 +36,5 @@
 		
 	}
 ?>
-<script src="js/partner/perfil_partner.js"></script>
+<script src="js/mission/mission.js"></script>
 
