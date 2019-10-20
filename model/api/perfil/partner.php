@@ -33,3 +33,5 @@
 ?>
 <script src="js/perfil/delete_partner.js"></script>
 <script src="js/partner/perfil_partner.js"></script>
+<script src="js/partner/partner_project.js"></script>
+<script src="js/partner/project_participated.js"></script>

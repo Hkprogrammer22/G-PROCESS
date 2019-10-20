@@ -1,9 +1,11 @@
+$(document).ready(function(){
 function atualizaProjetos() {
 		$.ajax({
-			url: '../../model/api/project/query.php',
+			url: 'model/api/project/query.php',
 			success: function (data) {
-				$('#find_project').html(data);
+				$('.find_project').html(data);
 			}
 		});
 	}
 	atualizaProjetos();
+  });

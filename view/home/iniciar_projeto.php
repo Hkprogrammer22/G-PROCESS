@@ -47,30 +47,4 @@
 	</footer>
 </div>
 <script src="js/project/find_partner_project.js"></script>
-<script>
-	$(document).ready(function(){
-		$('.form-parceiros').show();
-		$('.form-info').hide();
-		$('#voltar').hide();
-		$('#voltar').click(function(){
-			$('.form-parceiros').show();
-			$('.form-info').hide();
-			$('#voltar').hide();
-		});
-		$('#proximo').click(function(){
-			$('.form-parceiros').hide();
-			$('.form-info').show();
-			$('#voltar').show();
-		});
-		$('#project_insert').submit(function(){
-			$.ajax({
-				url: 'model/api/project/insert.php',
-				type: 'post',
-				data: $('#project_insert').serialize(),
-				success: function(data){
-					alert(data);
-				}
-			});
-		});
-	});
-</script>
+<script src="js/project/insert_project.js"></script>

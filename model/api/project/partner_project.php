@@ -18,7 +18,7 @@
 		echo '
 		
 			<div role="heading" class="ui-controlgroup-label">
-				<H1>Selecione seus parceiros para o Projeto</lh1>
+				<H1>Selecionar Parceiro(s):</lh1>
 			</div>
 			<div data-filter="true"></div>';
 		while ($registro = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)) {

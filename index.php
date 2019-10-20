@@ -22,6 +22,7 @@
 		include('view/home/prototipacao.php');
 		include('view/home/incremental.php');
         include('view/home/espiral.php');
+        include('view/home/missao.php');
         include('view/home/scrum_home.php');
         include('view/home/scrum_proximo_sprint.php');
         include('view/home/scrum_fazendo.php');

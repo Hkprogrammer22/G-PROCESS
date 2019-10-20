@@ -49,9 +49,9 @@
 			$sql = "INSERT INTO $tabela ($campos) VALUES ($valores)";
 			
 			if (mysqli_query($link, $sql)) {
-				echo "O usuário adcionado com Sucesso";
+				echo "Sucesso!";
 			}else{
-				echo "O usuário não foi cadastrado com Sucesso";
+				echo "Error ao inserir dados";
 			}
 		}
 		//Método de Busca

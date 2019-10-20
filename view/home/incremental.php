@@ -18,7 +18,7 @@
 
 			<h1 style="text-align: center;" class="text-project">Game</h1>
 			<h2 style="text-align: center">Incremental</h2>
-
+			
 			<div data-role="content" data-theme="b">
 				<h2 class="text-project">Conceito</h2>
 				
@@ -27,7 +27,7 @@
 						<a href="#popupAnexo4" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-icon-edit ui-btn-icon-left ui-shadow ui-corner-all">Anexos</a>
 					</div>
 					<div class="ui-block-b">
-						<a href="#popupMissao4" data-rel="popup" data-position-to="window" data-transition="pop" data-role="button" class="ui-btn ui-icon-tag ui-btn-icon-left ui-shadow ui-corner-all">Missão</a>
+						<a href="#missao" data-role="button" class="ui-btn ui-icon-tag ui-btn-icon-left ui-shadow ui-corner-all">Missão</a>
 					</div>	
 				</div>
 				<div class="ui-grid-a">
@@ -48,30 +48,9 @@
                 	</form>
                 </div>
 			</div>
-			<!-- POPUP MISSÃO -->
-			<div data-role="popup" id="popupMissao4" data-theme="b" class="ui-corner-all">
-            	<input type="text" placeholder="Adicionar missão" name="">
-				Designar parceiro
-				<select>
-					<option>Parceiro X</option>
-					<option>Parceiro Y</option>
-				</select>
-				<hr>
-				 <fieldset data-role="controlgroup">
-               		<legend><h2>Lista de missões:</h2></legend>
-             		<input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
-             		<label for="checkbox-1a">Primeira Reunião</label>
-                 	<input type="checkbox" name="checkbox-2a" id="checkbox-2a">
-              	 	<label for="checkbox-2a">Termo de abertura</label>
-              		<input type="checkbox" name="checkbox-3a" id="checkbox-3a">
-             		<label for="checkbox-3a">Termo de desenvolvimento</label>
-					<button>Salvar</button>
-				</fieldset>
-			</div>
 
-			  <form>
     		  <input type="range" name="slider-2" id="slider-2" data-highlight="true" min="0" max="100" value="50">
-			  </form>
+
 			 <button>Finalizar etapa</button>
 			</div>
 
@@ -190,5 +169,5 @@
 	</main>
 
 	<footer data-role="footer" class="ui-bar" data-position="fixed">&reg; Direcione Sua Ideia </footer>
-
 </div>
+<script src="js/mission/insert_mission.js"></script>
